@@ -15,7 +15,7 @@
         </div>        
         <div class="register-box">
             <h2>REGISTER</h2>
-            <form action="index.html" method="POST">
+            <form id="register-form" action="#" method="POST">
                 <div class="form-row">
                     <input type="text" placeholder="Username" required>
                     <input type="email" placeholder="Email" required>
@@ -53,11 +53,10 @@
         </div>
     </div>
     <script>
-document.getElementById('register-box').addEventListener('submit', function(event) {
+document.getElementById('register-form').addEventListener('submit', function(event) {
     event.preventDefault();
-    window.location.href = 'Home1.html';
+    window.location.href = 'index.html';
 });
-
     </script>
 </body>
 </html>
