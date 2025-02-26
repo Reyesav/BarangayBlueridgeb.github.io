@@ -13,10 +13,9 @@
             All records should be stored in a secure and confidential manner.
         </div>
         
-        
         <div class="login-box">
             <h2>LOGIN</h2>
-            <form id="Login" action="Home1.html" method="GET">
+            <form id="login-form">
                 <input type="text" placeholder="Username" required>
                 <input type="password" placeholder="Password" required>
                 <button type="submit">Sign In</button>
@@ -24,5 +23,12 @@
             <p class="register-link">Don't have an account? <a href="Register1.html">Register Here</a></p>
         </div>
     </div>
+
+    <script>
+        document.getElementById('login-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            window.location.href = 'Home1.html';
+        });
+    </script>
 </body>
 </html>
